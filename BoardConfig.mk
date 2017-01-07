@@ -26,7 +26,7 @@ USE_CLANG_PLATFORM_BUILD := true
 # Inherit from oppo-common
 -include device/oppo/common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := OnePlus3,oneplus3
+TARGET_OTA_ASSERT_DEVICE := OnePlus3,oneplus3,OnePlus3T,oneplus3t
 
 PLATFORM_PATH := device/oneplus/oneplus3
 
@@ -125,10 +125,6 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_HARDWARE_CLASS += $(PLATFORM_PATH)/mkhw
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
 
-# CNE and DPM
-TARGET_LDPRELOAD := libNimsWrap.so
-BOARD_USES_QCNE := true
-
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
 
@@ -158,6 +154,7 @@ TARGET_NO_RPC := true
 USE_DEVICE_SPECIFIC_GPS := true
 
 # Init
+TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_oneplus3
 TARGET_RECOVERY_DEVICE_MODULES := libinit_oneplus3
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
@@ -183,6 +180,7 @@ BOARD_FLASH_BLOCK_SIZE := 262144
 TARGET_RIL_VARIANT := caf
 
 # Recovery
+TARGET_BOARD_INFO_FILE ?= $(PLATFORM_PATH)/board-info.txt
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_UI_LIB := librecovery_ui_msm
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_msm

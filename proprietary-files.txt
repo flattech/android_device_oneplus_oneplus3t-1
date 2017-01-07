@@ -36,13 +36,10 @@ lib/libmm-qcamera.so
 lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
 lib/libqomx_core.so
-vendor/lib/libchromaflash.so|8fe5d31f6d1e304b6b6ffe4ca2576abbcb2cc88d
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
-vendor/lib/libmmcamera_chromaflash_lib.so|fe5ce108e3fe4081e3a2c544f27bc5d13019ba15
-vendor/lib/libmmcamera_optizoom_lib.so|17dfddb185f8c9a2bc075d656849024a9912dc88
 vendor/lib/libmmcamera2_c2d_module.so
 vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
@@ -135,10 +132,12 @@ vendor/lib/libmmjpeg.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libois_rohm_bu63165gwl.so
-vendor/lib/liboptizoom.so|5cd3d2b56986eebe4a0d4605d13be825886ae017
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc_pipe.so
 vendor/lib/libqomx_jpegenc.so
+vendor/lib/libremosaic_daemon.so
+vendor/lib/libremosaic_tuning.so
+vendor/lib/libremosaiclib.so
 vendor/lib/libSonyIMX298PdafLibrary.so
 
 # Camera actuators
@@ -201,6 +200,7 @@ vendor/lib/libchromatix_imx298_4K_preview.so
 vendor/lib/libchromatix_imx298_4K_video_s.so
 vendor/lib/libchromatix_imx298_4K_video.so
 vendor/lib/libchromatix_imx298_common_60fps.so
+vendor/lib/libchromatix_imx298_common_clearshot.so
 vendor/lib/libchromatix_imx298_common_manual.so
 vendor/lib/libchromatix_imx298_common.so
 vendor/lib/libchromatix_imx298_cpp_hfr_120.so
@@ -240,6 +240,7 @@ vendor/lib/libchromatix_imx298_zsl_preview_s.so
 vendor/lib/libchromatix_imx298_zsl_preview.so
 vendor/lib/libchromatix_imx298_zsl_video_s.so
 vendor/lib/libchromatix_imx298_zsl_video.so
+vendor/lib/libchromatix_imx298_zsl_video_s.so
 vendor/lib/libchromatix_s5k3p8_common.so
 vendor/lib/libchromatix_s5k3p8_cpp_hfr_120.so
 vendor/lib/libchromatix_s5k3p8_cpp_hfr_60.so
@@ -293,42 +294,22 @@ lib/libopcamera_crypt.so
 lib/libopcamera_native_modules.so
 lib/libopcamera.so
 lib/libopcameralib.so
-lib/libopencv_calib3d.so
-lib/libopencv_carotene.so
-lib/libopencv_core.so
-lib/libopencv_face.so
-lib/libopencv_features2d.so
-lib/libopencv_flann.so
-lib/libopencv_fuzzy.so
-lib/libopencv_highgui.so
-lib/libopencv_imgcodecs.so
-lib/libopencv_imgproc.so
-lib/libopencv_libjasper.so
-lib/libopencv_libjpeg.so
-lib/libopencv_libopenexr.so
-lib/libopencv_libpng.so
-lib/libopencv_libtiff.so
-lib/libopencv_ml.so
-lib/libopencv_objdetect.so
-lib/libopencv_openxv.so
-lib/libopencv_optflow.so
-lib/libopencv_photo.so
-lib/libopencv_shape.so
-lib/libopencv_stitching.so
-lib/libopencv_structure_light.so
-lib/libopencv_superpixel.so
-lib/libopencv_superres.so
-lib/libopencv_surface_matching.so
-lib/libopencv_ts.so
-lib/libopencv_video.so
-lib/libopencv_videoio.so
-lib/libopencv_videostab.so
-lib/libopencv_world.so
-lib/libopencv_xfeatures2d.so
-lib/libopencv_ximgproc.so
-lib/libopencv_xobjdetect.so
-lib/libopencv_xphoto.so
-lib/libopencv_zlib.so
+lib/libop_calib3d.so
+lib/libop_core.so
+lib/libop_flann.so
+lib/libop_imgcodecs.so
+lib/libop_imgproc.so
+lib/libop_jasper.so
+lib/libop_jpeg.so
+lib/libop_openexr.so
+lib/libop_optflow.so
+lib/libop_png.so
+lib/libop_tiff.so
+lib/libop_video.so
+lib/libop_ximgproc.so
+lib/libop_zlib.so
+lib/libopcamera_crypt.so
+lib/libopcamera_native_modules.so
 
 # Camera / DSP - Hexagon libraries
 lib/rfsa/adsp/libmorpho_image_stabilizer4_hvx_skel.so
@@ -393,7 +374,8 @@ vendor/lib/libmmcamera_isp_sub_module.so
 
 # Display calibration
 -etc/qdcm_calib_data_samsung_s6e3fa3_1080p_cmd_mode_dsi_panel.xml
--etc/qdcm_calib_data_samsung_s6e3fa3_1080p_video_mode_dsi_panel.xml
+-etc/qdcm_calib_data_samsung_s6e3fa5_1080p_cmd_mode_dsi_panel.xml
+-etc/qdcm_calib_data_samsung_s6e3fa5r9s_1080p_cmd_mode_dsi_panel.xml
 
 # Fingerprint sensor
 bin/qfp-daemon

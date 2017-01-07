@@ -3,11 +3,13 @@ bin/adsprpcd
 vendor/lib/libadsp_default_listener.so
 vendor/lib/libadsp_hvx_callback_skel.so
 vendor/lib/libadsp_hvx_stub.so
+vendor/lib/libvpphvx.so
 vendor/lib/libadsprpc.so
 vendor/lib/libfastcvadsp_stub.so
 vendor/lib/libfastcvopt.so
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
+vendor/lib64/libvpphvx.so
 
 # ADSP modules
 vendor/lib/rfsa/adsp/libadsp_hvx_add_constant.so
@@ -56,60 +58,6 @@ etc/firmware/rampatch_tlv_3.0.tlv
 etc/firmware/rampatch_tlv_3.2.tlv
 vendor/lib/libbtnv.so
 vendor/lib64/libbtnv.so
-
-# CNE
-bin/cnd
-etc/cne/SwimConfig.xml
-etc/cne/andsfCne.xml
-etc/cne/wqeclient/profile1.xml
-etc/cne/wqeclient/profile2.xml
-etc/cne/wqeclient/profile3.xml
-etc/cne/wqeclient/profile4.xml
-etc/cne/wqeclient/profile5.xml
-etc/permissions/ConnectivityExt.xml
-etc/permissions/cneapiclient.xml
-etc/permissions/com.quicinc.cne.xml
-framework/ConnectivityExt.jar
-framework/cneapiclient.jar
-framework/com.quicinc.cne.jar
--priv-app/CNEService/CNEService.apk
-vendor/lib/libNimsWrap.so
-vendor/lib/libcne.so
-vendor/lib/libcneapiclient.so
-vendor/lib/libcneconn.so
-vendor/lib/libcneqmiutils.so
-vendor/lib/libvendorconn.so
-vendor/lib/libwqe.so
-vendor/lib/libxml.so
-vendor/lib64/libNimsWrap.so
-vendor/lib64/libcne.so
-vendor/lib64/libcneapiclient.so
-vendor/lib64/libcneconn.so
-vendor/lib64/libcneqmiutils.so
-vendor/lib64/libvendorconn.so
-vendor/lib64/libwqe.so
-vendor/lib64/libxml.so
-
-# DPM
-bin/dpmd
-etc/dpm/dpm.conf
-etc/dpm/nsrm/NsrmConfiguration.xml
-etc/permissions/com.qti.dpmframework.xml
-etc/permissions/dpmapi.xml
-framework/com.qti.dpmframework.jar
-framework/dpmapi.jar
-framework/tcmclient.jar
--priv-app/dpmserviceapp/dpmserviceapp.apk|9e108a2ec4ee9608c6b88083a8198b92858434ad
-vendor/lib/libdpmctmgr.so
-vendor/lib/libdpmfdmgr.so
-vendor/lib/libdpmframework.so
-vendor/lib/libdpmnsrm.so
-vendor/lib/libdpmtcm.so
-vendor/lib64/libdpmctmgr.so
-vendor/lib64/libdpmfdmgr.so
-vendor/lib64/libdpmframework.so
-vendor/lib64/libdpmnsrm.so
-vendor/lib64/libdpmtcm.so
 
 # DRM
 bin/qseecomd
@@ -261,14 +209,7 @@ vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal.so
-vendor/lib/libvpphvx.so
 vendor/lib/libvqzip.so
-
-# Network
--priv-app/QtiTetherService/QtiTetherService.apk
-vendor/lib/libconnctrl.so
-vendor/lib64/libconnctrl.so
-vendor/lib64/libQtiTether.so
 
 # Perf
 bin/energy-awareness
@@ -332,7 +273,7 @@ vendor/lib64/libquipc_os_api.so
 vendor/lib64/libsmemlog.so
 
 # Radio
--app/datastatusnotification/datastatusnotification.apk|644da08bf5d30df915768c32b174810ca0544d69
+-app/datastatusnotification/datastatusnotification.apk
 -app/embms/embms.apk
 -app/fastdormancy/fastdormancy.apk
 -app/QtiTelephonyService/QtiTelephonyService.apk
@@ -358,6 +299,9 @@ framework/QtiTelephonyServicelibrary.jar
 lib64/libparam.so
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
+vendor/lib/libcneapiclient.so
+vendor/lib/libxml.so
+vendor/lib64/libcneapiclient.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/liblqe.so
 vendor/lib64/libmdmdetect.so
@@ -367,6 +311,7 @@ vendor/lib64/libril-qc-qmi-1.so
 vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/libsystem_health_mon.so
+vendor/lib64/libxml.so
 vendor/qcril.db
 
 # Radio - IMS
