@@ -4,8 +4,12 @@
    "target_path": "device/oppo/common"
  },
  {
+   "repository": "OnePlus3T_Onyxia",
+   "target_path": "kernel/oneplus/msm-3.18"
+ },
+ {
    "repository": "android_vendor_oneplus_oneplus3",
-   "target_path": "vendor/oneplus/oneplus3"
+   "target_path": "vendor/oneplus/oneplus3t"
  },
  {
    "repository": "android_vendor_nxp-nfc_opensource_frameworks",
